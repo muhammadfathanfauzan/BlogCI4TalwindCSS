@@ -1,0 +1,35 @@
+/* Card Login Utama */
+.body {
+  background-color: #0dcaf0;
+}
+
+.login-card {
+  max-width: 700px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+/* Kolom Logo */
+.logo-col img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .login-card {
+    padding: 2rem 1rem;
+  }
+
+  .logo-col {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .logo-col img {
+    max-width: 250px;
+  }
+}

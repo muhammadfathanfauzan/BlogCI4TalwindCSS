@@ -1,0 +1,336 @@
+.back-to-top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: 0.5s;
+  z-index: 99;
+}
+
+/*** Button Start ***/
+.btn {
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.btn-square {
+  width: 32px;
+  height: 32px;
+}
+
+.btn-sm-square {
+  width: 34px;
+  height: 34px;
+}
+
+.btn-md-square {
+  width: 44px;
+  height: 44px;
+}
+
+.btn-lg-square {
+  width: 56px;
+  height: 56px;
+}
+
+.btn-xl-square {
+  width: 66px;
+  height: 66px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-md-square,
+.btn-lg-square,
+.btn-xl-square {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.btn.btn-primary {
+  color: var(--bs-white);
+}
+
+.btn.btn-primary:hover {
+  background: var(--bs-secondary);
+  border: 1px solid var(--bs-secondary);
+}
+
+.btn.btn-secondary {
+  color: var(--bs-white);
+}
+
+.btn.btn-secondary:hover {
+  background: var(--bs-primary);
+  border: 1px solid var(--bs-primary);
+}
+/*** Topbar Start ***/
+
+/*** Navbar ***/
+.custom-caption {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  z-index: 10;
+  max-width: 40%;
+}
+
+/*** Carousel Hero Header Start ***/
+
+/*** Carousel Hero Header End ***/
+
+/*** Single Page Hero Header Start ***/
+.bg-breadcrumb {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 20, 66, 0.7), rgba(0, 20, 66, 0.7)), url(../img/breadcrumb.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0 60px 0;
+  transition: 0.5s;
+}
+
+.bg-breadcrumb .breadcrumb {
+  position: relative;
+}
+
+.bg-breadcrumb .breadcrumb .breadcrumb-item a {
+  color: var(--bs-white);
+}
+
+@media (max-width: 992px) {
+  .bg-breadcrumb {
+    padding: 60px 0 60px 0;
+  }
+}
+/*** Single Page Hero Header End ***/
+
+/*** Features Start ***/
+.feature .feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--bs-white);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.feature .feature-item:hover {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+
+.feature .feature-item .feature-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bs-primary);
+}
+
+.feature .feature-item .feature-icon i {
+  transition: 0.5s;
+}
+
+.feature .feature-item:hover .feature-icon i {
+  transform: rotate(360deg);
+}
+
+.feature .feature-item a.btn {
+  transition: 0.5s;
+}
+
+.feature .feature-item:hover a.btn:hover {
+  color: var(--bs-primary) !important;
+}
+/*** Features End ***/
+
+/*** About Start ***/
+.about .about-img {
+  position: relative;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.about .about-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  top: -30px;
+  right: 0;
+  border-radius: 10px;
+  background: var(--bs-secondary);
+}
+
+.about .about-img::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 100%;
+  left: -30px;
+  bottom: 30px;
+  border-radius: 10px;
+  background: var(--bs-secondary);
+}
+
+.about .about-img .about-exp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px;
+  font-size: 30px;
+  font-weight: bold;
+  background: var(--bs-secondary);
+  color: var(--bs-white);
+  border: 1px solid var(--bs-secondary);
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 10px;
+}
+/*** About End ***/
+
+/*** Service Start ***/
+.service-item {
+  position: relative;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+}
+
+.service-item::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+  background: var(--bs-primary);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.service-item:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.service-item:hover .service-content,
+.service-item:hover .service-btn {
+  position: relative;
+  z-index: 2;
+}
+
+.service-item .service-content a,
+.service-item .service-content p {
+  transition: 0.5s;
+}
+
+.service-item:hover .service-content a:hover {
+  color: var(--bs-secondary);
+}
+
+.service-item:hover .service-content p {
+  color: var(--bs-white);
+}
+
+.service-item .service-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bs-primary);
+  transition: 0.5s;
+}
+
+.service-item .service-btn i {
+  transition: 0.5s;
+}
+
+.service-item:hover .service-btn {
+  background: var(--bs-white);
+}
+
+.service-item:hover .service-btn i {
+  transform: rotate(360deg);
+  color: var(--bs-primary) !important;
+}
+/*** Service End ***/
+
+/*** Products Start ***/
+.product .product-item {
+  border: 1px solid rgba(196, 211, 211, 0.9);
+  border-radius: 10px;
+}
+
+/*** Products End ***/
+
+/*** Blog Start ***/
+.blog .blog-item {
+  border-radius: 10px;
+  background: var(--bs-light);
+  transition: 0.5s;
+}
+
+.blog .blog-item:hover {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.2);
+}
+
+.blog .blog-item .blog-img {
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog .blog-item .blog-img::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.blog .blog-item .blog-img img {
+  transition: 0.5s;
+}
+
+.blog .blog-item:hover .blog-img img {
+  transform: scale(1.2);
+}
+
+.blog .blog-item:hover .blog-img::after {
+  background: rgba(0, 209, 249, 0.2);
+}
+
+.blog .blog-item .blog-date {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  border-radius: 10px;
+  background: var(--bs-primary);
+  color: var(--bs-white);
+  z-index: 2;
+}
+
+.blog .blog-item .blog-content a {
+  transition: 0.5s;
+}
+
+.blog .blog-item:hover .blog-content a:hover {
+  color: var(--bs-primary) !important;
+}
+/*** Blog End ***/
